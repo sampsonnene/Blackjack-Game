@@ -1,0 +1,107 @@
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+    background-image: url("/BlackjackGame/burningblackjack.jpeg");
+  }
+  
+  body * {
+    box-sizing: inherit;
+  }
+  
+  .message-box {
+    width: 900px;
+    max-width: calc(100% - 20px);
+    margin: 0 auto 10px;
+    height: 1em;
+    font-size: 18px;
+    color: rgb(22, 77, 8);
+  }
+  
+  .message-box.error {
+    color: rgb(122, 0, 0)
+  }
+  
+  .table {
+    width: 900px;
+    max-width: calc(100% - 20px);
+    border: 8px solid rgb(10, 43, 2);
+    border-radius: 20px;
+    background: blue;
+    margin: 0 auto;
+    color: white;
+    padding: 30px;
+  }
+  
+
+  .player-name {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: white;
+  }
+  
+  .points {
+    font-style: italic;
+  }
+  
+  .hand {
+    height: 120px;
+    background: blue;
+    border-radius: 5px;
+    width: 900px;
+    max-width: calc(100% - 20px);
+    border: 8px solid rgb(10, 43, 2);
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 30px;
+  }
+  
+  .hand img {
+    height: 100%;
+    width: auto;
+    padding: 10px 0 10px 10px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  button {
+    margin: 10px;
+    font-size: 18px;
+    border: 0;
+    padding: 10px 16px;
+    border-radius: 10px;
+    color: rgb(189, 229, 255);
+    background: blue;
+    border: 8px solid rgb(10, 43, 2);
+  }
+  
+  button:hover {
+    cursor: pointer;
+    background: rgb(35, 133, 199);
+    box-shadow: 0px 0px 10px 5px rgba(35, 133, 199, 0.55);
+  }
+  
+  button[disabled] {
+    color: rgb(160, 160, 160);
+    background: blue;
+  }
+  
+  button[disabled]:hover {
+    cursor: not-allowed;
+    background: blue;
+    box-shadow: none;
+  }
+  
+  button[type="reset"] {
+    color: rgb(255, 184, 184);
+    background: rgb(133, 8, 8);
+  }
+  
+  button[type="reset"]:hover {
+    background: rgb(150, 7, 7);
+    box-shadow: 0px 0px 10px 5px rgba(150, 7, 7, 0.63);
+  }
